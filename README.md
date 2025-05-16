@@ -15,10 +15,10 @@ The challenge proposes two tasks:
 2. **Regression**: Predicting an individual's MMSE score as a measure of their cognitive health.
 
 ## Our approach 
-We focused on addressing the classification task by leveraging graphical represntations of patient speech. Two approaches were implemented and tested. **Firstly**, we investigated the feasability of using Graph Neural Networks (GNN) for the classification of diagnostic categories. Simple directed speech graphs were constructed as input for these GNNs. **Secondly**, we included more informative features of a patient's speech (lexical, phonetic, spatial) into the constructed graphs by weighing the graph's edges according to these features. Subsequently, graphical features were extracted and used in various classifiacation models.
+We focused on addressing the classification task by leveraging graphical representations of patient speech. Two approaches were implemented and tested. **Firstly**, we investigated the feasibility of using Graph Neural Networks (GNN) for the classification of diagnostic categories. Simple directed speech graphs were constructed as input for these GNNs. **Secondly**, we included more informative features of a patient's speech (lexical, phonetic, semantic) into the constructed graphs by weighing the graph's edges according to these features. Subsequently, graphical features were extracted and used in various classification models.
 
 ## Code overview
-- **CTD_CIU_Distance.ipynb**: Extract seqeuence of CIUs from CTD and calculate distance between adjacent CIUs. 
+- **CTD_CIU_Distance.ipynb**: Extract sequence of CIUs from CTD and calculate distance between adjacent CIUs. 
 - **gnn_classification_class_weights.ipynb**: Preprocess graphical data, and train and evaluate a GNN-based classifier with class weights added
 - **PROCESS_METADATA_ALL.csv**:
 - **graph_features_classification.ipynb**:
